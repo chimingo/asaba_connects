@@ -71,41 +71,41 @@ class _HomeScreenState extends State<HomeScreen> {
 
               ),
             ),
-        //    Container(
-        //     padding:const EdgeInsets.only(left: 15),
-        //     clipBehavior: Clip.none,
-        //     width: double.infinity,
-        //    child: textInfo("Favourites", FontWeight.normal, Colors.white, 14)
-        //   ) ,
-        //   Container(
-        //     width:double.infinity,
-        //     height: 150,
-        //     padding: EdgeInsets.zero,
-        //     child: FutureBuilder(
-        //       future: getPhotos(),
-        //       builder:((context, snapshot){
-        //         return ListView.builder(
-        //           scrollDirection: Axis.horizontal,
-        //           itemCount: 30,
-        //           itemBuilder:((context, index){
-        //             return Column(
-        //               children: [
-        //                 Container(
-        //                   width: 70,
-        //                   height: 70,
-        //                   decoration: BoxDecoration(
-        //                     image: DecorationImage(image: NetworkImage("${snapshot.data[index]}"),
+           Container(
+            padding:const EdgeInsets.only(left: 15),
+            clipBehavior: Clip.none,
+            width: double.infinity,
+           child: textInfo("Favourites", FontWeight.normal, Colors.white, 14)
+          ) ,
+          Container(
+            width:double.infinity,
+            height: 150,
+            padding: EdgeInsets.zero,
+            child: FutureBuilder(
+              future: getPhotos(),
+              builder:((context, snapshot){
+                return ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: 30,
+                  itemBuilder:((context, index){
+                    return Column(
+                      children: [
+                        Container(
+                          width: 70,
+                          height: 70,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(image: NetworkImage("${snapshot.data[index]}"),
                             
                             
-        //                    ),
-        //                    ),
-        //                    ),
+                           ),
+                           ),
+                           ),
                            
-        //                    ],
-        //                     );
+                           ],
+                            );
                            
-        //           }
-        //         ));
+                  }
+                ));
                         
                       
 
@@ -115,11 +115,11 @@ class _HomeScreenState extends State<HomeScreen> {
 
         
         
-        //       }
-        // ),
-        //     )
-        //   )]
-          ]
+              }
+        ),
+            )
+          )]
+          
       )));
   }
   }
